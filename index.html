@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小狗导购员为您服务</title>
+    <!-- <style>
+        .container{
+            display:flex;
+            align-items:center;
+        }
+
+        .result-image{
+            flex:1;
+            padding:20px;
+            text-align:relative;
+            margin-left:320px;
+        }
+        .image_size{
+            max-width:100%;
+            height:auto;
+            position:absolute;
+            top:30px;
+            /* bottom:-5px; */
+            left:180px;
+            transform:scale(0.4);
+            transform-origin: top right;
+        }
+        
+        #selection-form{
+            flex:0 0 auto;
+            width:550px;
+            height:100vh;
+            position:fixed;
+            top:0;
+            left:0;
+            padding:20px;
+            /* width :300px;
+            height:100vh;
+            position:fixed;
+            top:0;
+            left:0;
+            padding:20px; */
+            overflow:break-word;
+            background-color: #fff;
+        }
+    </style> -->
+
+    <style>
+
+        .text-image-container{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        .image_{
+            max-width:100%;
+            height:auto;
+            margin-right:10px;
+            max-height:200px;
+            left:100px;
+        }
+        .right_text{
+            flex:2;
+            text-align:right;
+            font-size:20px;
+        }
+
+
+        .colored-word{
+            font-size: 20px;
+            color:red;
+        }
+        .image_size{
+            max-width: 300px;
+            max-height: 300px;
+            /* transform:scale(0.5); */
+        }
+        .colored-word-blue{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+
+        <div class="text-image-container">
+            <img class="image_" src="images/real_puppy.jpg" alt="">
+            
+            <p class="colored-word"><strong>小安提醒您:<br>
+                买专千万条<br>
+                安全第一条<br>
+                买专不规范<br>
+                小安两行泪</strong></p>
+                
+        </div>
+    <!-- <div class = "container"> -->
+        <form id = "selection-form">
+            <h2>在您买专前，首先可以参考下面版本的配置考虑自己想要的专辑版本(感谢@JIDONGYJ的整理)</h2>
+            <p> <strong><span class ="colored-word-blue">所有配置都是以问号形式预览存在</span></strong></p>
+            <p> <span class="colored-word">PB版</span>共<strong>3</strong>版本,配置为PB+CD+<strong>小卡6随1</strong>,<strong>预售礼</strong>:<strong>明信片6随1</strong>、<strong>贴纸6随1</strong></p>
+            <p> <span class="colored-word">LOVED IVE版(L版)</span>共<strong>1</strong>版本,配置为PB+CD+<strong>小卡6随1</strong>,<strong>预售礼</strong>:<strong>海报6随1</strong>、<strong>拍立得6随1</strong></p>
+            <p> <span class="colored-word">DIGIPACK版(D版)</span>共<strong>6</strong>版本，为<strong>单封</strong>版本,配置为小PB+CD+<strong>小卡6随1</strong>+<strong>小海报6随1</strong>
+            <p> <span class="colored-word">PLVE版(P版)</span>共<strong>1</strong>版本<strong>电子专</strong>，配置为<strong>QR卡</strong>+<strong>小卡6随1</strong></p>
+            <h2>请选择您的需求</h2>
+            <div id ="question1">
+                <h3>是否需要特典？</h3>
+                <label><input type="radio" name="need_bonus" value="需要"> 需要</label><br>
+                <label><input type="radio" name="need_bonus" value="不需要"> 不需要</label><br>
+            </div>
+
+
+            <div id = "question2" style="display: none;">
+                <h3>不需要特典的情况下，需不需要PB版(普通版)/LOVEDIVE版无特典专辑</h3>
+                    <label><input type="radio" name="need_PL" value="需要"> 需要</label><br>
+                    <label><input type="radio" name="need_PL" value="不需要"> 不需要</label><br>
+            </div>
+
+            <div id = "question3" style = "display: none;">
+                <h3>选择哪个平台的特典<span class = "colored-word-blue">(除星船特外其余平台特典都为购买PB版+L版赠送,专辑均为四版本随机一版)</span></h3>
+                
+                    <label><input type="radio" name="bonus_platform" value="星船">星船</label><br>
+                    <label><input type="radio" name="bonus_platform" value="KAKAO">KAKAO</label><br>
+                    <label><input type="radio" name="bonus_platform" value="SW">SW</label><br>
+                    <label><input type="radio" name="bonus_platform" value="WM">WM</label><br>
+                    <label><input type="radio" name="bonus_platform" value="K4">K4</label><br>
+                    <label><input type="radio" name="bonus_platform" value="楠艺">楠艺</label><br>
+                    <label><input type="radio" name="bonus_platform" value="爱豆驿站">爱豆驿站 ->set购买,6专7卡,除6张一套的小卡还会赠一张安宥真小卡</label><br>
+                    <img class="image_size" id = "preview-image" src = "images/holder.jpg" alt="请点选项以产生预览图像">
+            
+                </div>
+            <div id = "question4" style = "display: none;">
+                <h3>星船特典分为set购买特典以及随机特典，随机特典一般为6随1or12随2/set购买一般需要买一套指定专辑,会给一套卡</h3>
+                    <label><input type="radio" name="starship_platform" value="set">set</label><br>
+                    <label><input type="radio" name="starship_platform" value="随机">随机</label><br>
+            </div>
+
+            <div id = "submit-button" style = "display: none;">
+                <input type = "submit" value = "提交">
+            </div>
+
+        </form>
+
+        <!-- <div class = "result-image">
+            <img class="image_size" src ="images/album_index.jpg" alt="专辑配置图">
+        </div> -->
+    </div>
+
+    <script>
+        // 获取问题元素和结果元素
+        const selectionForm = document.getElementById('selection-form')
+        const question1 = document.getElementById('question1')
+        const question2 = document.getElementById('question2')
+        const question3 = document.getElementById('question3')
+        const question4 = document.getElementById('question4')
+        const submitButton = document.getElementById('submit-button');
+
+        selectionForm.addEventListener('submit',function (e){
+            e.preventDefault();
+            redirectToResultPage();
+        });
+
+        function redirectToResultPage(){
+
+            const needBonus = document.querySelector('input[name="need_bonus"]:checked')?document.querySelector('input[name="need_bonus"]:checked').value: '默认值';
+            const needPL = document.querySelector('input[name="need_PL"]:checked')?document.querySelector('input[name="need_PL"]:checked').value:'默认';
+            const BonusPlatform = document.querySelector('input[name="bonus_platform"]:checked')?document.querySelector('input[name="bonus_platform"]:checked').value:"默认";
+            const StarshitPlatform = document.querySelector('input[name="starship_platform"]:checked')?document.querySelector('input[name="starship_platform"]:checked').value:"默认";
+            const resultPageURL = `result.html?need_bonus=${needBonus}&need_PL=${needPL}&bonus_platform=${BonusPlatform}&starship_platform=${StarshitPlatform}`;
+            window.location.href = resultPageURL;
+
+        }
+        const needBonusInputs = document.querySelectorAll('input[name="need_bonus"]');
+        const needPLInputs = document.querySelectorAll('input[name="need_PL"]');
+        const BonusPlatformInputs = document.querySelectorAll('input[name="bonus_platform"]');
+        const StarshitPlatformInputs = document.querySelectorAll('input[name="starship_platform"]');
+    
+        needBonusInputs.forEach(input => {
+            input.addEventListener('change', () => {
+                if (input.value === '需要') {
+                    question2.style.display = 'none';
+                    question4.style.display = 'none';
+                    question3.style.display = 'block';
+                } else {
+                    question3.style.display = 'none';
+                    question4.style.display = 'none';
+                    question2.style.display = 'block';
+                }
+            });
+        });
+
+        needPLInputs.forEach(input => {
+            input.addEventListener('change', () => {
+                submitButton.style.display = 'block';
+                question3.style.display = 'none';
+                question4.style.display = 'none'; 
+            });
+        });
+
+        BonusPlatformInputs.forEach(input => {
+            input.addEventListener('change', () => {
+                const imageElement = document.getElementById("preview-image")
+                let imgePath = "";
+                imagePath = `images/${input.value}.jpg`;
+                imageElement.src = imagePath;
+                if (input.value === '星船') {
+                    submitButton.style.display = 'none';
+                    question4.style.display = 'block';
+                } else {
+                    submitButton.style.display = 'block';
+                    question4.style.display = 'none';
+                }
+            });
+        });
+
+        StarshitPlatformInputs.forEach(input => {
+            input.addEventListener('change', () => {
+                submitButton.style.display = 'block';
+            });
+        });
+
+    
+    </script>
+</body>
+</html>
