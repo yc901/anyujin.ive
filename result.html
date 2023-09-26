@@ -98,8 +98,8 @@
                         <p>${needBonus}特典，特典平台为${bonusPlatform}，特典形式为${StarshitPlatform} </p>
                         <p>根据您的选择，提供以下购买链接和方法：</p>
                         <p class="colored-word-blue"><strong>DIGPACK版(单封版)：</strong></p>
-                        <p class="colored-word-blue"><strong>1.可指定安宥真单封，不拆卡为随机特典，买六张可凑齐一套特典</strong></p>
-                        <p><a href="https://www.nanyiglobal.com/2309ivessdp-1-45127114">楠艺不拆卡</a><strong> 价格：61r/张 10.12早8点截止</strong></p>
+                        <p class="colored-word-blue"><strong>1.指定单封船特已无，需要指定单封可以考虑k4平台。</strong></p>
+                        <!--<p><a href="https://www.nanyiglobal.com/2309ivessdp-1-45127114">楠艺不拆卡</a><strong> 价格：61r/张 10.12早8点截止</strong></p>-->
                         
 
                         <p class="colored-word-blue"><strong>2.单封随机，不拆卡为随机特典，买六张可凑齐一套特典</strong></p>
@@ -181,6 +181,7 @@
                     <p><strong>参与时间:9.5 10:00~9.30 22.59</strong></p>
                     <p><a href="https://www.nanyiglobal.com/2309ivenypol-1">楠艺低价</a><strong> 价格：68r/张</strong></p>
                     <p><a href="https://www.nanyiglobal.com/2309ivenypo-1">楠艺</a><strong> 价格：72r/张</strong></p>
+                    <p><a href="https://www.nanyiglobal.com/2309ivenypo11-1?continueFlag=0fe32751654d9538117e77e9a8cb9046">楠艺 1+1(1张安宥真小卡+1张队友随机特典卡)</a><strong> 价格：144r 2张</strong></p>
                     `;
             }
             else if(bonusPlatform ==='爱豆驿站'){
@@ -190,6 +191,13 @@
                     <p><a href="https://shop1723959802.v.weidian.com/item.html?itemID=6630235548">爱豆驿站</a><strong> 价格：72r/张</strong></p>
                     <p><a href="https://shop1723959802.v.weidian.com/item.html?itemID=6641984351">爱豆驿站 1+1(1张安宥真小卡+1张队友随机特典卡)</a><strong> 价格：144r 2张</strong></p>
                     `;
+            }
+            else if(bonusPlatform ==="KMS"){
+                resultContent.innerHTML=`
+                    <p>${needBonus}特典，特典平台为${bonusPlatform}</p>
+                    <p class="colored-word-blue"><strong>KMS特典皆为6随1，专辑为4随1，6张可凑套</strong></p>
+                    <p><a href="https://shop1382036085.v.weidian.com/item.html?itemID=6656971590&wfr=c&source=goods_home&ifr=itemdetail&sfr=app">KMS</a><strong> 价格：75r/张 10.12 23：59截止</strong></p>
+                `;
             }
 
         }
