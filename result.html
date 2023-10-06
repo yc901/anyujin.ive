@@ -8,6 +8,11 @@
         .colored-word-blue{
             color:red;
         }
+        .image_size{
+            max-width: 300px;
+            max-height: 300px;
+            /* transform:scale(0.5); */
+        }
     </style>
 </head>
 <body>
@@ -148,18 +153,18 @@
                 resultContent.innerHTML=`
                     <p>${needBonus}特典，特典平台为${bonusPlatform}</p>
                     <p class="colored-word-blue"><strong>SW特典皆为6随1，专辑为4随1</strong></p>
-                    <p><a href="https://www.yetimall.fun/h5/#/pages/store/goodsDetail/goodsDetail?gid=7671&continueFlag=cbfae1f120486ca7f05fd541aa2d3891">YetiMall->SWx1</a><strong> 价格：76r/张 10.5晚8点截止</strong></p>
-                    <p><a href="https://www.nanyiglobal.com/2309ivepo-1">楠艺->SW特典 </a><strong>价格：75r/张 10.6早8点截止</strong></p>
+                    <!--<p><a href="https://www.yetimall.fun/h5/#/pages/store/goodsDetail/goodsDetail?gid=7671&continueFlag=cbfae1f120486ca7f05fd541aa2d3891">YetiMall->SWx1</a><strong> 价格：76r/张 10.5晚8点截止</strong></p>-->
+                    <!--<p><a href="https://www.nanyiglobal.com/2309ivepo-1">楠艺->SW特典 </a><strong>价格：75r/张 10.6早8点截止</strong></p>-->
                     <p><a href="https://shop881578129.v.weidian.com/item.html?itemID=6594390518">熊宝->SW预售特典->一般盘</a><strong> 价格：80r/张 10.6截止</strong></p>
-                    <p><a href="https://shop1723959802.v.weidian.com/item.html?itemID=6593456939">爱豆驿站->SW特典</a><strong> 价格：76r/张 10.4截止</strong></p>
-                    <p><a href="https://www.oxbldkr.com/index.php/wap/goods/detail?goods_id=5717&continueFlag=cbfae1f120486ca7f05fd541aa2d3891">偶像便利店->PB-SW特典-随机1张</a><strong> 价格：78r/张 10.6截止</strong></p>
+                    <!--<p><a href="https://shop1723959802.v.weidian.com/item.html?itemID=6593456939">爱豆驿站->SW特典</a><strong> 价格：76r/张 10.4截止</strong></p>-->
+                    <!--<p><a href="https://www.oxbldkr.com/index.php/wap/goods/detail?goods_id=5717&continueFlag=cbfae1f120486ca7f05fd541aa2d3891">偶像便利店->PB-SW特典-随机1张</a><strong> 价格：78r/张 10.6截止</strong></p>-->
                     `;
             }
             else if(bonusPlatform ==='WM'){
                 resultContent.innerHTML=`
                     <p>${needBonus}特典，特典平台为${bonusPlatform}</p>
                     <p class="colored-word-blue"><strong>WM特典皆为6随1，专辑为4随1</strong></p>
-                    <p><a href="https://www.yetimall.fun/h5/#/pages/store/goodsDetail/goodsDetail?gid=7671&continueFlag=cbfae1f120486ca7f05fd541aa2d3891">YetiMall->WMx1</a><strong> 价格：81r/张 9.25晚8点截止</strong></p>
+                    <!--<p><a href="https://www.yetimall.fun/h5/#/pages/store/goodsDetail/goodsDetail?gid=7671&continueFlag=cbfae1f120486ca7f05fd541aa2d3891">YetiMall->WMx1</a><strong> 价格：81r/张 9.25晚8点截止</strong></p>-->
                     <p><a href="https://www.nanyiglobal.com/2309ivepo-1">楠艺->WM特典</a><strong> 价格:80r/张 9.26早7点截止</strong></p>
                     <!--<p><a href="https://shop1723959802.v.weidian.com/item.html?itemID=6593456939">爱豆驿站->WM特典</a><strong> 价格：82r/张 9.21截止</strong></p>-->
                     <!--<p><a href="https://www.oxbldkr.com/index.php/wap/goods/detail?goods_id=5717&continueFlag=cbfae1f120486ca7f05fd541aa2d3891">偶像便利店->PB-WM特典-随机1张</a><strong> 价格：83r/张 9.25截止</strong></p>-->
@@ -179,7 +184,7 @@
                     <p>${needBonus}特典，特典平台为${bonusPlatform}</p>
                     <p class="colored-word-blue"><strong>楠艺特典皆为6随1，专辑为4随1</strong></p>
                     <p><strong>参与时间:9.5 10:00~9.30 22.59</strong></p>
-                    <p><a href="https://www.nanyiglobal.com/2309ivenypol-1">楠艺低价</a><strong> 价格：68r/张</strong></p>
+                    <!--<p><a href="https://www.nanyiglobal.com/2309ivenypol-1">楠艺低价</a><strong> 价格：68r/张</strong></p>-->
                     <p><a href="https://www.nanyiglobal.com/2309ivenypo-1">楠艺</a><strong> 价格：72r/张</strong></p>
                     <p><a href="https://www.nanyiglobal.com/2309ivenypo11-1?continueFlag=0fe32751654d9538117e77e9a8cb9046">楠艺 1+1(1张安宥真小卡+1张队友随机特典卡)</a><strong> 价格：144r 2张</strong></p>
                     `;
@@ -189,7 +194,7 @@
                     <p>${needBonus}特典，特典平台为${bonusPlatform}</p>
                     <p class="colored-word-blue"><strong>爱豆驿站特典皆为6随1，专辑为4随1，6张可凑套</strong></p>
                     <p><a href="https://shop1723959802.v.weidian.com/item.html?itemID=6630235548">爱豆驿站</a><strong> 价格：72r/张</strong></p>
-                    <p><a href="https://shop1723959802.v.weidian.com/item.html?itemID=6641984351">爱豆驿站 1+1(1张安宥真小卡+1张队友随机特典卡)</a><strong> 价格：144r 2张</strong></p>
+                    <!--<p><a href="https://shop1723959802.v.weidian.com/item.html?itemID=6641984351">爱豆驿站 1+1(1张安宥真小卡+1张队友随机特典卡)</a><strong> 价格：144r 2张</strong></p>-->
                     `;
             }
             else if(bonusPlatform ==="KMS"){
@@ -197,7 +202,22 @@
                     <p>${needBonus}特典，特典平台为${bonusPlatform}</p>
                     <p class="colored-word-blue"><strong>KMS特典皆为6随1，专辑为4随1，6张可凑套</strong></p>
                     <p><a href="https://shop1382036085.v.weidian.com/item.html?itemID=6656971590&wfr=c&source=goods_home&ifr=itemdetail&sfr=app">KMS</a><strong> 价格：75r/张 10.12 23：59截止</strong></p>
+                    <p><a href="https://shop1382036085.v.weidian.com/item.html?itemID=6657136412&wfr=c&source=goods_home&ifr=itemdetail&sfr=app">KMS 1+1</a><strong> 价格：150r 10.12 23：59截止</strong></p>
                 `;
+            }
+            else if(bonusPlatform ==="MMT"){
+                resultContent.innerHTML=`
+                    <p>${needBonus}特典，特典平台为${bonusPlatform}</p>
+                    <p class="colored-word-blue"><strong>MMT特典皆为6随1,6张可凑套</strong></p>
+                    
+                    <p><a href="https://www.yetimall.fun/h5/#/pages/store/goodsDetail/goodsDetail?gid=8653&continueFlag=9fd9225255444a6efc41456d18733b1a">yetimall 不参与签售</a><strong> 价格：81.5r/张 10.13 下午4点截止</strong></p>
+                    <p><a href="https://www.yetimall.fun/h5/#/pages/store/goodsDetail/goodsDetail?gid=8663&continueFlag=9fd9225255444a6efc41456d18733b1a">yetimall 参与签售</a><strong> 价格：97r/张 10.12 晚8点截止</strong></p>
+                    <p><a href="https://www.nanyiglobal.com/2301016ivemmt-1">楠艺 不参与签售</a><strong> 价格：79.5r/张 10.13 早8点截止</strong></p>
+                    <p><a href="https://www.oxbldkr.com/index.php/wap/goods/detail?goods_id=6994&continueFlag=9fd9225255444a6efc41456d18733b1a">偶像便利店 不参与签售</a><strong> 价格：95r/张 10.12 截止</strong></p>
+                    <p>MMT shop小程序(图片加载可能需要一点时间)不参与签售 82r/张:</p>
+                    <img class="image_size" id = "preview-image" src = "images/mmt_.jpg" alt="请点选项以产生预览图像">
+                
+                    `;
             }
 
         }
